@@ -455,7 +455,7 @@ div#CatList ul li.sel
 	border:none
 }
 
-#-_-_-all-_-_-,#-_-_-dls-_-_-,#-_-_-com-_-_-,#-_-_-act-_-_-,#-_-_-iac-_-_-,#-_-_-err-_-_-
+.-_-_-all-_-_-,#-_-_-all-_-_-,#-_-_-dls-_-_-,#-_-_-com-_-_-,#-_-_-act-_-_-,#-_-_-iac-_-_-,#-_-_-err-_-_-
 {
 	background-image:url(./images/status_icons.png)
 }
@@ -481,7 +481,7 @@ div#CatList ul li.sel
 	transition:all .3s cubic-bezier(0.68,-0.55,0.27,1.55) 0
 }
 
-#-_-_-all-_-_-
+.-_-_-all-_-_-,#-_-_-all-_-_-
 {
 	background-position:4px -175px
 }
