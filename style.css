@@ -440,6 +440,12 @@ div#CatList ul li.sel span
 	color:#AACF27
 }
 
+div#CatList ul li span.label-text {
+	color:#FFF;
+}
+span.label-count,span.label-size { background-color: #273238; }
+
+
 div#CatList ul li
 {
 	border:none;
