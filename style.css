@@ -599,9 +599,22 @@ div#gcont table
 div.graph_tab
 {
 	color:#FFF;
-	border-color:#0c0c0c;
-	border-top-color:#606060;
 	background-color:#181818;
+}
+
+.graph_tab_grid {
+	border: 2px solid #606060;
+}
+
+.graph_tab_legend {
+	color: #FFF;
+	background-color: #181818;
+}
+
+.graph_tab_tooltip {
+	color: #FFF;
+	background-color: #606060;
+	border: 1px solid #606060;
 }
 
 div.table_tab
