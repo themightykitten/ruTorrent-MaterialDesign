@@ -430,26 +430,12 @@ div#CatList
 	border-left:none
 }
 
-div#CatList ul li span
-{
-	color:#D4D6C9
-}
 
-div#CatList ul li.sel span
-{
-	color:#AACF27
-}
 
-div#CatList .label-text {
-	color:#FFF;
-}
-
-.label-count,.label-size {
-	background-color: #273238;
-}
 
 div#CatList ul li
 {
+	color:#FFF;
 	border:none;
 	padding: 4px;
 	font-family:'Roboto'
@@ -457,8 +443,9 @@ div#CatList ul li
 
 div#CatList .label-prefix
 {
-	font-size: 20px;
+	font-size: 21px;
 }
+
 
 div#CatList ul li.sel
 {
@@ -466,6 +453,15 @@ div#CatList ul li.sel
 	color:#009DDD;
 	text-shadow:0 -1px 0 #000;
 	border:none
+}
+
+.label-count,.label-size {
+	color: #D4D6C9;
+	background-color: #273238;
+}
+
+li.sel .label-count, li.sel .label-size {
+	color:#009DDD;
 }
 
 .label-icon {
