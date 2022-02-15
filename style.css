@@ -768,7 +768,7 @@ div#tcreate textarea#trackers
 	cursor:text
 }
 
-input[type="text"],input[type="password"],select
+input[type="number"],input[type="text"],input[type="password"],select
 {
 	color:#fff;
 	border:none;
@@ -776,7 +776,7 @@ input[type="text"],input[type="password"],select
 	border-radius:2px
 }
 
-input[type="text"][disabled],input[type="password"][disabled],input[type="file"][disabled],select[disabled]
+input[type="number"][disabled],input[type="text"][disabled],input[type="password"][disabled],input[type="file"][disabled],select[disabled]
 {
 	color:#fff;
 	border:none;
