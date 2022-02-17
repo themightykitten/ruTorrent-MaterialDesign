@@ -455,6 +455,11 @@ div#CatList ul li.sel
 	border:none
 }
 
+div#CatList li.sel .label-prefix
+{
+	color:#FFF;
+}
+
 .label-count,.label-size {
 	color: #D4D6C9;
 	background-color: #273238;
