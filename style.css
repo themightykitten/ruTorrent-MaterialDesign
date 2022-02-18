@@ -1101,16 +1101,12 @@ span#loadimg
 
 ::-webkit-scrollbar-button:start:decrement
 {
-	height:23px;
-	display:block;
-	background-color:transparent
+	display:none;
 }
 
 ::-webkit-scrollbar-button:end:increment
 {
-	height:23px;
-	display:block;
-	background-color:transparent
+	display:none;
 }
 
 ::-webkit-scrollbar-corner
