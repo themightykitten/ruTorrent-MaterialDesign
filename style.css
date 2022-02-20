@@ -1134,7 +1134,7 @@ input#clear_log,input#add_url,input#add_button
 div#lcont div.std
 {
 	background:#181818 url(./images/headers.png) repeat-x 0 -37px;
-	height:17px;
+	min-height:17px;
 	line-height:17px;
 	border-bottom:1px solid #333
 }
