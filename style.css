@@ -495,14 +495,9 @@ li.sel .label-count, li.sel .label-size {
 }
 
 
-div#CatList ul li.RSS .label-icon
+.stable-icon
 {
 	background-image:url(./images/status_icons.png);
-}
-
-div#CatList ul li.disRSS .label-icon
-{
-	background-image:url(./images/status_icons.png)
 }
 
 .stable-icon
