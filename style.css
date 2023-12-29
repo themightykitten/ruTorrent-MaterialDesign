@@ -430,22 +430,22 @@ div#CatList
 	border-left:none
 }
 
-div#CatList ul li span
-{
-	color:#D4D6C9
-}
 
-div#CatList ul li.sel span
-{
-	color:#AACF27
-}
+
 
 div#CatList ul li
 {
+	color:#FFF;
 	border:none;
-	margin:5px;
+	padding: 4px;
 	font-family:'Roboto'
 }
+
+div#CatList .label-prefix
+{
+	font-size: 21px;
+}
+
 
 div#CatList ul li.sel
 {
@@ -455,9 +455,22 @@ div#CatList ul li.sel
 	border:none
 }
 
-#-_-_-all-_-_-,#-_-_-dls-_-_-,#-_-_-com-_-_-,#-_-_-act-_-_-,#-_-_-iac-_-_-,#-_-_-err-_-_-
+div#CatList li.sel .label-prefix
 {
-	background-image:url(./images/status_icons.png)
+	color:#FFF;
+}
+
+.label-count,.label-size {
+	color: #D4D6C9;
+	background-color: #273238;
+}
+
+li.sel .label-count, li.sel .label-size {
+	color:#009DDD;
+}
+
+.label-icon {
+	background-image: url(./images/status_icons.png);
 }
 
 .catpanel
@@ -481,45 +494,10 @@ div#CatList ul li.sel
 	transition:all .3s cubic-bezier(0.68,-0.55,0.27,1.55) 0
 }
 
-#-_-_-all-_-_-
-{
-	background-position:4px -175px
-}
 
-#-_-_-dls-_-_-
-{
-	background-position:4px 2px
-}
-
-#-_-_-com-_-_-
-{
-	background-position:4px -15px
-}
-
-#-_-_-act-_-_-
-{
-	background-position:4px -159px
-}
-
-#-_-_-iac-_-_-
-{
-	background-position:4px -31px
-}
-
-#-_-_-err-_-_-
-{
-	background-position:4px -95px
-}
-
-div#CatList ul li.RSS
+.stable-icon
 {
 	background-image:url(./images/status_icons.png);
-	background-position:4px -207px
-}
-
-div#CatList ul li.disRSS
-{
-	background-image:url(./images/status_icons.png)
 }
 
 .stable-icon
@@ -542,16 +520,12 @@ div#CatList ul li.disRSS
 	background:transparent url(./images/dir.gif) no-repeat left center
 }
 
-div#CatList ul li.sel span
+div#CatList .sel .label-size, div#CatList .sel .label-size
 {
 	color:#009DDD
 }
 
-div#flabel_cont ul li
-{
-	background-image:url(./images/status_icons.png);
-	background-position:4px -352px
-}
+#flabel_cont li:not(.-_-_-all-_-_-) .label-icon { background:transparent url(./images/status_icons.png) no-repeat 0 -352px; }
 
 div.tab
 {
@@ -593,8 +567,22 @@ div#gcont table
 div.graph_tab
 {
 	color:#FFF;
-	border-color:#000;
-	background-color:#181818
+	background-color:#181818;
+}
+
+.graph_tab_grid {
+	border: 2px solid #606060;
+}
+
+.graph_tab_legend {
+	color: #FFF;
+	background-color: #181818;
+}
+
+.graph_tab_tooltip {
+	color: #FFF;
+	background-color: #606060;
+	border: 1px solid #606060;
 }
 
 div.table_tab
@@ -780,7 +768,7 @@ div#tcreate textarea#trackers
 	cursor:text
 }
 
-input[type="text"],input[type="password"],select
+input[type="number"],input[type="text"],input[type="password"],select
 {
 	color:#fff;
 	border:none;
@@ -788,7 +776,7 @@ input[type="text"],input[type="password"],select
 	border-radius:2px
 }
 
-input[type="text"][disabled],input[type="password"][disabled],input[type="file"][disabled],select[disabled]
+input[type="number"][disabled],input[type="text"][disabled],input[type="password"][disabled],input[type="file"][disabled],select[disabled]
 {
 	color:#fff;
 	border:none;
@@ -1108,16 +1096,12 @@ span#loadimg
 
 ::-webkit-scrollbar-button:start:decrement
 {
-	height:23px;
-	display:block;
-	background-color:transparent
+	display:none;
 }
 
 ::-webkit-scrollbar-button:end:increment
 {
-	height:23px;
-	display:block;
-	background-color:transparent
+	display:none;
 }
 
 ::-webkit-scrollbar-corner
@@ -1145,7 +1129,7 @@ input#clear_log,input#add_url,input#add_button
 div#lcont div.std
 {
 	background:#181818 url(./images/headers.png) repeat-x 0 -37px;
-	height:17px;
+	min-height:17px;
 	line-height:17px;
 	border-bottom:1px solid #333
 }
